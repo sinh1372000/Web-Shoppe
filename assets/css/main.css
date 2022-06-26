@@ -1,0 +1,36 @@
+.header {
+  height: 120px;
+  background: linear-gradient(0, #fe6433, #f53e2d);
+}
+.header__navbar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__navbar-list {
+  list-style: none;
+  padding-left: 0;
+}
+.header__navbar-item {
+  margin: 0 8px;
+  position: relative;
+}
+.header__navbar-item,
+.header__navbar-link {
+  font-size: 1.5rem;
+  color: var(--white-color);
+  display: inline-block;
+  text-decoration: none;
+  padding: 0 5px;
+  font-weight: 300;
+}
+.header__navbar-item--sperate::after {
+  content: "";
+  display: block;
+  position: absolute;
+  border-right: 1px solid #fb9086;
+  height: 16px;
+  right: -8px;
+  top: 50%;
+  transform: translateY(-50%);
+}
